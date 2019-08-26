@@ -34,7 +34,6 @@ class App extends React.Component {
   sortAsc = e => {
     e.preventDefault();
     const { numbers } = this.state;
-    /* istanbul ignore next */
     this.setState({ numbers: numbers.sort() });
   };
 
