@@ -1,3 +1,5 @@
+/* istanbul ignore next */
+
 const path = require("path");
 
 module.exports = {

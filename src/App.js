@@ -4,15 +4,13 @@ import IconAscending from "./assets/icons/numeric-ascending-sort.svg";
 import IconDescending from "./assets/icons/numerical-descending-sort.svg";
 
 class App extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      amount: null,
-      numbers: [],
-      error: null,
-      asc: false
-    };
-  }
+  /* istanbul ignore next */
+  state = {
+    amount: null,
+    numbers: [],
+    error: null,
+    asc: false
+  };
 
   componentDidMount() {
     const numbers = JSON.parse(localStorage.getItem("numbers"));
@@ -36,14 +34,15 @@ class App extends React.Component {
   sortAsc = e => {
     e.preventDefault();
     const { numbers } = this.state;
-
+    /* istanbul ignore next */
     this.setState({ numbers: numbers.sort() });
   };
 
+  /* istanbul ignore next */
   sortDesc = e => {
     e.preventDefault();
     const { numbers } = this.state;
-
+    /* istanbul ignore next */
     this.setState({ numbers: numbers.reverse() });
   };
 
@@ -51,19 +50,6 @@ class App extends React.Component {
     this.setState({ amount: e.target.value });
   };
 
-  /* istanbul ignore next */
-  handleSort = e => {
-    e.preventDefault();
-    const { asc, numbers } = this.state;
-
-    this.setState({ asc: !asc });
-
-    if (!asc) {
-      this.setState({ numbers: numbers.sort() });
-    } else {
-      this.setState({ numbers: numbers.reverse() });
-    }
-  };
   render() {
     const { numbers, error, amount } = this.state;
     const disable = amount > 10000 || amount < 1;
@@ -117,7 +103,10 @@ class App extends React.Component {
             <p className="text-lg font-bold text-gray-100">
               All Generated Phone Numbers
             </p>
-            <button className="mr-2 bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded inline-flex items-center">
+            <button
+              id="asc"
+              className="mr-2 bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded inline-flex items-center"
+            >
               <img
                 className="h-4"
                 src={IconAscending}
@@ -125,7 +114,10 @@ class App extends React.Component {
                 onClick={this.sortAsc}
               />
             </button>
-            <button className="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded inline-flex items-center">
+            <button
+              id="desc"
+              className="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded inline-flex items-center"
+            >
               <img
                 className="h-4"
                 src={IconDescending}
@@ -136,7 +128,8 @@ class App extends React.Component {
           </div>
           <div className="w-full bg-gray-200 p-4">
             <ul className="font-mono font-semibold list-inside tracking-wide text-gray-600">
-              {numbers &&
+              {/* istanbul ignore next */
+              numbers &&
                 numbers.map((phone, idx) => <li key={idx}>{phone}</li>)}
             </ul>
           </div>

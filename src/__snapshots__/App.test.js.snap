@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`renders welcome message 1`] = `
+exports[`Renders App component 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <App />,
@@ -93,6 +93,7 @@ ShallowWrapper {
             </p>
             <button
               className="mr-2 bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded inline-flex items-center"
+              id="asc"
             >
               <img
                 alt="Sort Ascending"
@@ -107,6 +108,7 @@ ShallowWrapper {
             </button>
             <button
               className="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded inline-flex items-center"
+              id="desc"
             >
               <img
                 alt="Sort Descending"
@@ -444,6 +446,7 @@ ShallowWrapper {
               </p>
               <button
                 className="mr-2 bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded inline-flex items-center"
+                id="asc"
               >
                 <img
                   alt="Sort Ascending"
@@ -458,6 +461,7 @@ ShallowWrapper {
               </button>
               <button
                 className="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded inline-flex items-center"
+                id="desc"
               >
                 <img
                   alt="Sort Descending"
@@ -496,6 +500,7 @@ ShallowWrapper {
                 </p>,
                 <button
                   className="mr-2 bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded inline-flex items-center"
+                  id="asc"
                 >
                   <img
                     alt="Sort Ascending"
@@ -510,6 +515,7 @@ ShallowWrapper {
                 </button>,
                 <button
                   className="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded inline-flex items-center"
+                  id="desc"
                 >
                   <img
                     alt="Sort Descending"
@@ -555,6 +561,7 @@ ShallowWrapper {
                     }
                   />,
                   "className": "mr-2 bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded inline-flex items-center",
+                  "id": "asc",
                 },
                 "ref": null,
                 "rendered": Object {
@@ -591,6 +598,7 @@ ShallowWrapper {
                     }
                   />,
                   "className": "bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded inline-flex items-center",
+                  "id": "desc",
                 },
                 "ref": null,
                 "rendered": Object {
@@ -726,6 +734,7 @@ ShallowWrapper {
               </p>
               <button
                 className="mr-2 bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded inline-flex items-center"
+                id="asc"
               >
                 <img
                   alt="Sort Ascending"
@@ -740,6 +749,7 @@ ShallowWrapper {
               </button>
               <button
                 className="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded inline-flex items-center"
+                id="desc"
               >
                 <img
                   alt="Sort Descending"
@@ -1077,6 +1087,7 @@ ShallowWrapper {
                 </p>
                 <button
                   className="mr-2 bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded inline-flex items-center"
+                  id="asc"
                 >
                   <img
                     alt="Sort Ascending"
@@ -1091,6 +1102,7 @@ ShallowWrapper {
                 </button>
                 <button
                   className="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded inline-flex items-center"
+                  id="desc"
                 >
                   <img
                     alt="Sort Descending"
@@ -1129,6 +1141,7 @@ ShallowWrapper {
                   </p>,
                   <button
                     className="mr-2 bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded inline-flex items-center"
+                    id="asc"
                   >
                     <img
                       alt="Sort Ascending"
@@ -1143,6 +1156,7 @@ ShallowWrapper {
                   </button>,
                   <button
                     className="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded inline-flex items-center"
+                    id="desc"
                   >
                     <img
                       alt="Sort Descending"
@@ -1188,6 +1202,7 @@ ShallowWrapper {
                       }
                     />,
                     "className": "mr-2 bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded inline-flex items-center",
+                    "id": "asc",
                   },
                   "ref": null,
                   "rendered": Object {
@@ -1224,6 +1239,7 @@ ShallowWrapper {
                       }
                     />,
                     "className": "bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded inline-flex items-center",
+                    "id": "desc",
                   },
                   "ref": null,
                   "rendered": Object {
