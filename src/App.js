@@ -4,12 +4,16 @@ import IconAscending from "./assets/icons/numeric-ascending-sort.svg";
 import IconDescending from "./assets/icons/numerical-descending-sort.svg";
 
 class App extends React.Component {
-  state = {
-    amount: null,
-    numbers: [],
-    error: null,
-    asc: false
-  };
+  constructor(props) {
+    super(props);
+    this.state = {
+      amount: null,
+      numbers: [],
+      error: null,
+      asc: false
+    };
+  }
+
   componentDidMount() {
     const numbers = JSON.parse(localStorage.getItem("numbers"));
     /* istanbul ignore next */
