@@ -1,10 +1,16 @@
 import React from "react";
 import App from "./App";
+import Auth from "./utils/auth";
 import generateNumbers from "./utils";
 import { shallow, mount } from "../enzyme";
 
 it("Renders App component", () => {
   const wrapper = shallow(<App />);
+  expect(wrapper).toMatchSnapshot();
+});
+
+it("Renders Auth component", () => {
+  const wrapper = shallow(<Auth />);
   expect(wrapper).toMatchSnapshot();
 });
 
