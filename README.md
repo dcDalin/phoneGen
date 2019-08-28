@@ -1,0 +1,1 @@
+[![Coverage Status](https://coveralls.io/repos/github/dcDalin/phoneGen/badge.svg?branch=develop)](https://coveralls.io/github/dcDalin/phoneGen?branch=develop) [![Build Status](https://travis-ci.org/dcDalin/phoneGen.svg?branch=master)](https://travis-ci.org/dcDalin/phoneGen)
