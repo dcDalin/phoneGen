@@ -1,15 +1,11 @@
-sudo: false
-
 language: node_js
 
 node_js:
-  - node
-
-install:
-  - npm install
-
+  - "10.7.0"
+  - "node"
+cache:
+  directories:
+    - node_modules
 script:
-  - npm run test:coveralls
-
-notifications:
-  - email: false
+  - npm run test
+after_success: -npm run coverage
