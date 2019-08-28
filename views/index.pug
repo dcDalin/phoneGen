@@ -21,9 +21,20 @@ html
               div(class="col-auto")
                 button(class="btn btn-lg btn-success" type="submit" value="submit") Generate
           br
+          a(href='/ascending')
+            span.badge.badge-primary Sort Ascending
+
+          a(href='/descending')
+            span.badge.badge-secondary Sort Descending
+
+          a(href='/total')
+            span.badge.badge-success Total Numbers
+          br
+          br
           div(class="list-group")
             each phoneNumber, i in phoneNumbers
               li(class="list-group-item")= phoneNumber
+
 
     script(src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js")
     script(src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js")

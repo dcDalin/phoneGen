@@ -29,3 +29,33 @@ it("should search for number", function(done) {
       done();
     });
 });
+
+it("should load total page", function(done) {
+  chai
+    .request(app)
+    .get("/total")
+    .end(function(err, res) {
+      res.should.have.status(200);
+      done();
+    });
+});
+
+it("should load ascending page", function(done) {
+  chai
+    .request(app)
+    .get("/ascending")
+    .end(function(err, res) {
+      res.should.have.status(200);
+      done();
+    });
+});
+
+it("should load descending page", function(done) {
+  chai
+    .request(app)
+    .get("/descending")
+    .end(function(err, res) {
+      res.should.have.status(200);
+      done();
+    });
+});

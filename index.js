@@ -29,6 +29,27 @@ app.post("/generate", (req, res) => {
   res.redirect("/");
 });
 
+app.get("/ascending", (req, res) => {
+  const ascending = PhoneNumbers.sort();
+  res.render("ascending", {
+    phoneNumbers: ascending
+  });
+});
+
+app.get("/descending", (req, res) => {
+  const descending = PhoneNumbers.reverse();
+  res.render("descending", {
+    phoneNumbers: descending
+  });
+});
+
+app.get("/total", (req, res) => {
+  const total = PhoneNumbers.length;
+  res.render("total", {
+    total
+  });
+});
+
 app.listen(PORT, () => console.log(`Server listening on port ${PORT}`));
 
 module.exports = app;
