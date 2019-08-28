@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "nodemon node index.js",
+    "start": "node index.js",
     "test": "mocha",
     "test:cov": "nyc mocha",
     "coverage": "nyc report --reporter=text-lcov | coveralls"
